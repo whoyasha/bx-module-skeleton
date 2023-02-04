@@ -1,5 +1,5 @@
 <?php
-namespace Vdnh\BxUtils;
+namespace BLANK\BxUtils;
 	
 use \Bitrix\Main\Loader;	
 	
