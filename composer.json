@@ -12,7 +12,6 @@
 	}
   ],
   "require": {
-	"whoyasha/composer-installers": "*",
-  "andreyryabin/sprint.migration": "dev-master"
+	"whoyasha/composer-installers": "*"
   }
 }
