@@ -2,7 +2,7 @@
   "name": "whoyasha/bx-main",
   "description": "Bitrix start",
   "homepage": "https://iagent.ru",
-  "type": "bitrix-d7-module",
+  "type": "bitrix-d7-template",
   "license": "MIT",
   "authors": [
 	{
