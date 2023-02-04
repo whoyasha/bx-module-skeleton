@@ -12,8 +12,6 @@ Class ModuleInit {
 		$params = $this->SetSettings();
 		
 		$params["LOADER_CLASSNAME"] = "\\" . ucwords($params["VENDOR"]) . "\\BxUtils\\CLoader";
-		
-		// echo '<pre>$params in ' . __FUNCTION__ . ' : '; print_r($params); echo'</pre>';
 
 		foreach($params as $code => $set)
 			$this->{$code} = $set;
@@ -29,8 +27,6 @@ Class ModuleInit {
 	private function includeCLoader() {
 		
 		$path = $_SERVER["DOCUMENT_ROOT"] . $this->MODULE_PATH . "/bx_utils/" . ucwords($this->VENDOR) . "/BxUtils/CLoader.php";
-		
-		// echo '<pre>$this->LOADER_CLASSNAME in ' . __FUNCTION__ . ' : '; print_r($this->LOADER_CLASSNAME); echo'</pre>';
 
 		if ( !class_exists($this->LOADER_CLASSNAME) && file_exists($path) )
 			require_once($path);
@@ -44,15 +40,10 @@ Class ModuleInit {
 	public function loadLibs( array $libs = [], $debug = false ) : bool {
 		
 		$check = class_exists($this->LOADER_CLASSNAME) ? "Y" : "N";
-		
-		echo '<pre>$check in ' . __CLASS__ . ' : '; print_r($check); echo'</pre>';
-		
+
 		if ( !class_exists($this->LOADER_CLASSNAME) ) 
 			$this->includeCLoader();
 
-		// if ( !$this->includeCLoader() )
-		// 	return false;
-		
 		$classes = [];
 
 		foreach ( $libs as $lib ) {
