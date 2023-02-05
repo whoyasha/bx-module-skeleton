@@ -1,6 +1,6 @@
 {
   "name": "whoyasha/bx-main",
-  "description": "Bitrix new blank module create",
+  "description": "Bitrix start package",
   "homepage": "https://iagent.ru",
   "type": "bitrix-d7-template",
   "license": "MIT",
