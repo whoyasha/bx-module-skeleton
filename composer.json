@@ -12,6 +12,6 @@
 	}
   ],
   "require": {
-	"whoyasha/composer-installers": "dev-main"
+	"whoyasha/composer-installers": "dev-dev"
   }
 }
