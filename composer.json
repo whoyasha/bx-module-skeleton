@@ -1,7 +1,7 @@
 {
   "name": "whoyasha/bx-main",
   "description": "Bitrix start",
-  "version": 1.0.0,
+  "version": 1.0,
   "homepage": "https://iagent.ru",
   "type": "bitrix-d7-template",
   "license": "MIT",
