@@ -24,7 +24,8 @@ Class ModuleInstallHelper {
 				"VENDOR"             => $VENDOR,
 				"AUTHORS"            => $items["authors"],
 				"MODULE_DESCRIPTION" => $settings["module_description"],
-				"MODULE_VERSION"     => "0.0.0",
+				"MODULE_VERSION"     => "1.1.1",
+				"MODULE_VERSION_DATE"=> "2023-20-20",
 				"MODULE_PATH"        => getLocalPath("modules/" . $MODULE_ID),
 			];
 			
