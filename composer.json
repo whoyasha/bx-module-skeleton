@@ -1,6 +1,6 @@
 {
-  "name": "whoyasha/bx-main",
-  "description": "Bitrix start package",
+  "name": "whoyasha/bx-module-skeleton",
+  "description": "Bitrix new blank module create",
   "homepage": "https://iagent.ru",
   "type": "bitrix-d7-template",
   "license": "MIT",
@@ -12,6 +12,6 @@
 	}
   ],
   "require": {
-	  "whoyasha/bx-composer-installers": "dev-master"
+	"whoyasha/bx-composer-installers": "dev-master"
   }
 }
