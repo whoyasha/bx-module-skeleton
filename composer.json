@@ -10,8 +10,5 @@
 	  "homepage": "https://iagent.ru",
 	  "email": "y@iagent.ru"
 	}
-  ],
-  "require": {
-	"whoyasha/bx-composer-installers": "dev-dev"
-  }
+  ]
 }
