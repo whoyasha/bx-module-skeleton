@@ -9,14 +9,13 @@ use \Bitrix\Main,
 	
 CJSCore::Init(["jquery"]);
 
-$MODULE_ID = array_pop(explode("/", __DIR__));
+$config = BxModule::config(array_pop(explode("/", __DIR__)));
 
-if ( !Loader::IncludeModule($MODULE_ID) )
+if ( !Loader::IncludeModule($config->MODULE_ID) )
 	return;
 
-$init = initBxModule($MODULE_ID);
+echo '<pre>$config : '; print_r($config->MODULE_PATH); echo'</pre>';
 
-// $errors = $init->get("ERRORS");
 
 if ( strlen($errors) > 0 ) {
 	CAdminMessage::ShowMessage([
@@ -24,7 +23,7 @@ if ( strlen($errors) > 0 ) {
 	]);
 }
 
-$options = $init->getOptions("Get Options here");
+$options = $config->Options();
 
 echo '<pre>$options in options.php ' . __FUNCTION__ . ' : '; print_r($options); echo'</pre>';
 
