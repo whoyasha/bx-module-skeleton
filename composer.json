@@ -12,6 +12,6 @@
 	}
   ],
   "require": {
-	"whoyasha/composer-installers": "dev-dev"
+	"whoyasha/bx-composer-installers": "dev-dev"
   }
 }
