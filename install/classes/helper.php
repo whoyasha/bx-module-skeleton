@@ -17,6 +17,11 @@ Class ModuleInstallHelper {
 				if ( $item_name == $name )
 					$settings = $item;
 			}
+			
+			$version_file = $_SERVER["DOCUMENT_ROOT"] . getLocalPath("modules/" . $MODULE_ID . "/install/version.php");
+			if ( file_exists( $version_file ) ) {
+				include ($version_file);
+			}
 		
 			$params = [
 				"MODULE_ID"          => $MODULE_ID,
