@@ -2,7 +2,7 @@
   "name": "whoyasha/bx-module-skeleton",
   "description": "Bitrix new module create",
   "homepage": "https://iagent.ru",
-  "type": "bitrix-d7-template",
+  "type": "bitrix-d7-modules",
   "license": "MIT",
   "authors": [
 	{
