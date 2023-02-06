@@ -1,0 +1,17 @@
+{
+  "name": "whoyasha/bx-module-skeleton",
+  "description": "Bitrix new module create",
+  "homepage": "https://iagent.ru",
+  "type": "bitrix-d7-template",
+  "license": "MIT",
+  "authors": [
+	{
+	  "name": "Yasha Okoneshnikov",
+	  "homepage": "https://iagent.ru",
+	  "email": "y@iagent.ru"
+	}
+  ],
+  "require": {
+	"whoyasha/bx-composer-installers": "dev-master"
+  }
+}
