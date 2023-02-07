@@ -10,7 +10,7 @@ Class ModuleInstallHelper {
 			$VENDOR = $items["extra"]["installer-vendor"];
 			$name = str_replace($VENDOR . "_", "", $MODULE_ID);
 
-			foreach ( $items["extra"]["modules"] as $id => $item ) {
+			foreach ( $items["extra"]["bx-skeleton-modules"] as $id => $item ) {
 				$item_name = explode("/", $item["name"])[1];
 				$item_name = !empty($item_name) ? $item_name : $item["name"];
 			
